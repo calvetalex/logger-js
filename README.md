@@ -28,6 +28,21 @@ Furthermore, if an error occurred it will be logged in the standard logfile but 
 
 Finally, the last parameter is a boolean to let Logger knows if you want to overwrite logfile or not. By default logs will be append to the file.
 
+Once you have initialize your logger, you can use it :
+
+```js
+const txt = "a simple log";
+const arr = [1,2,3,4,5];
+const obj = { name: "toto", age: 19, city: "Toulouse" };
+
+logger.log(txt);
+logger.info("a simple info");
+logger.debug("a simple debug);
+logger.error("a simple error");
+logger.log(arr);
+logger.log(obj);
+```
+
 ## Logging
 
 Each method take a string or a variable as argument.

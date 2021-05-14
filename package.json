@@ -1,5 +1,5 @@
 {
-  "name": "logger-js",
+  "name": "@atic_c/multi-logger-js",
   "version": "1.0.0",
   "description": "A simple logger which is able to write in logfile",
   "main": "logger-js.js",

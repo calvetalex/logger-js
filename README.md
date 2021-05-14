@@ -49,7 +49,14 @@ Each method take a string or a variable as argument.
 
 If it's an object, it will be stringify before output to make it readable in a logfile. This is to avoid `[Object Object]` in the middle of your file. (WARNING : in JS `a = [1,2,3]` has an Object type : `typeof a` will give object)
 
-![log example](https://github.com/calvetalex/logger-js/blob/main/.images/output.png)
+```txt
+[LOG][2021-05-14 . 18:51] a simple log
+[INF][2021-05-14 . 18:51] a simple info
+[DEB][2021-05-14 . 18:51] a simple debug
+[ERR][2021-05-14 . 18:51] a simple error
+[LOG][2021-05-14 . 18:51] [1,2,3,4,5]
+[LOG][2021-05-14 . 18:51] {"name":"toto","age":19,"city":"Toulouse"}
+```
 
 ## COMMENTS / ISSUES / PR
 

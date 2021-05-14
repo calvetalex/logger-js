@@ -27,7 +27,7 @@ Each method take a string or a variable as argument.
 
 If it's an object, it will be stringify before output to make it readable in a logfile. This is to avoid `[Object Object]` in the middle of your file. (WARNING : in JS `a = [1,2,3]` has an Object type : `typeof a` will give object)
 
-![log example](https://github.com/calvetalex/logger-js/blob/master/.images/output.png)
+![log example](https://github.com/calvetalex/logger-js/blob/main/.images/output.png)
 
 ## COMMENTS / ISSUES / PR
 

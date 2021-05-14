@@ -1,0 +1,22 @@
+{
+  "name": "logger-js",
+  "version": "1.0.0",
+  "description": "A simple logger which is able to write in logfile",
+  "main": "logger-js.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvetalex/logger-js.git"
+  },
+  "keywords": [
+    "logger",
+    "js",
+    "log",
+    "logfile"
+  ],
+  "author": "acalvet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvetalex/logger-js/issues"
+  },
+  "homepage": "https://github.com/calvetalex/logger-js#readme"
+}

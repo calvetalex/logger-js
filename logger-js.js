@@ -34,7 +34,9 @@ class Logger {
   errorStream;
 
   constructor(name, path = "") {
-    if (!path || !fs.existsSync(path)) {
+    if (!path) return;
+    if (!fs.existsSync(path)) {
+      this.error(`WARNING : directory '${path}' does not exists. Please use a valid path to get logfiles.\n\n`);
       return;
     }
     this.logfilePath = `${

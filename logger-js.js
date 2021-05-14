@@ -33,7 +33,7 @@ class Logger {
   standardStream;
   errorStream;
 
-  constructor(name, path = "") {
+  constructor(name, path = "", overwrite = false) {
     if (!path) return;
     if (!fs.existsSync(path)) {
       this.error(`WARNING : directory '${path}' does not exists. Please use a valid path to get logfiles.\n\n`);
@@ -46,9 +46,9 @@ class Logger {
       path.slice(-1) !== "/" ? path + "/" : path
     }${name}-error.log`;
     this.standardStream = fs.createWriteStream(this.logfilePath, {
-      flags: "a+",
+      flags: (overwrite ? "w+" : "a+"),
     });
-    this.errorStream = fs.createWriteStream(this.errorPath, { flags: "a+" });
+    this.errorStream = fs.createWriteStream(this.errorPath, { flags: (overwrite ? "w+" : "a+") });
   }
 
   getDate() {

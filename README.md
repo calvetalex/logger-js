@@ -13,15 +13,17 @@ log, info, debug, error
 To use it in your project you can use it like:
 
 ```js
+const Logger = require('@atic_c/multi-logger-js');
+
 const logger = new Logger("onStdout"); // will write on your console
 const loggerWith = new Logger("WithLogfile", "./log"); // will write on your console and save in a logfile
 ```
 
-The first argument is the name given to the process, the logfile will be called `my_app.log` in that case.
+The first argument is the name given to the process, the logfile will be called `WithLogfile-standard.log` in that case.
 
 Second parameter is the path to your log directory, if it's not given, the Logger will just write on stdout. If the path given is invalid, logfile will not be created and the Logger will just log on stdout.
 
-Furthermore, if an error occurred it will be logged in the standard logfile but also in a error logfile.
+Furthermore, if an error occurred it will be logged in the standard logfile but also in a error logfile, in our example `WithLogfile-error.log`.
 
 ## Logging
 
